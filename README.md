@@ -1,9 +1,9 @@
-## Proyecto Solsi App
-## Descripción
+# Proyecto Solsi App
+### Descripción
 La Solsi App es una aplicación educativa interactiva diseñada para ayudar a los usuarios a aprender y controlar dispositivos conectados a través de Firebase y ESP32. 
 La app incluye diversas pantallas interactivas, donde el usuario puede interactuar con imágenes y escuchar audios, activando servomotores a través de Firebase Realtime Database.
 
-##Funcionalidades:
+### Funcionalidades:
 Reproduce audios y controla servomotores mediante Firebase.
 
 Interacción con imágenes que activan eventos de audio y control de servos.
@@ -12,50 +12,47 @@ Ventanas emergentes con tutoriales y enlaces a videos de ayuda.
 
 Navegación entre pantallas (Inicio, Puzzle, Instrucciones).
 
-## Requisitos
+### Requisitos
 Para ejecutar este proyecto, necesitas tener instaladas las siguientes herramientas:
+- Flutter
 
--------------------------------------------------------------------------------
-Flutter
+- Dart
 
-Dart
+- Firebase
 
-Firebase
+## Android Studio (para emular o ejecutar en dispositivo)
 
-Android Studio (para emular o ejecutar en dispositivo)
---------------------------------------------------------------------------------
-
-Configuración
-1. Clonar el repositorio
-Primero, clona este repositorio en tu máquina local:
-**********************************************************
+Configuración:
+1. **Clonar el repositorio:** Primero, clona este repositorio en tu máquina local:
+```
 git clone https://github.com/tu-usuario/solsi-app.git
 cd solsi-app
-**********************************************************
+```
 
-3. Instalar dependencias
-En la terminal, navega a la carpeta raíz del proyecto y ejecuta:
-**********************************************************
+
+3. **Instalar dependencias:** En la terminal, navega a la carpeta raíz del proyecto y ejecuta:
+```
 flutter pub get
-**********************************************************
+```
 
-3. Configuración de Firebase
+3. **Configuración de Firebase:**
 Asegúrate de que Firebase esté configurado en tu proyecto de Flutter. Sigue los pasos de la documentación de Firebase para Flutter en Configurar Firebase en Flutter.
 
-4. Configuración de Firebase Realtime Database
+4. **Configuración de Firebase Realtime Database:**
 Asegúrate de tener habilitada la base de datos en tiempo real en tu proyecto Firebase. La base de datos debe contener una ruta como /SERVO/servo1 para controlar el servomotor.
 
-5. Configuración de ESP32
+5. **Configuración de ESP32**
 El ESP32 debe estar configurado para recibir señales de Firebase. Asegúrate de que esté escuchando cambios en la ruta /SERVO/servo1 para controlar el servomotor.
 
-6. Configurar la red Wi-Fi
+6. **Configurar la red Wi-Fi**
 Si estás utilizando Wi-Fi, puedes configurar el ESP32 para conectarse a cualquier red utilizando un portal cautivo (WiFiManager) o configurarlo manualmente en el código.
 
-Ejecución
+## Ejecución
+
 Una vez que hayas configurado el proyecto, puedes ejecutarlo en tu dispositivo o emulador:
-*********************************************
+```
 flutter run
-*********************************************
+```
 
 ## Estructura del Proyecto
 lib/: Contiene los archivos principales de código fuente de la app.
@@ -77,25 +74,23 @@ Archivos de audio como nidoc.mp3, cuevae.mp3, Tablero.mp3, Despedida.mp3.
 
 ## Funcionalidades Clave
 
--Pantalla de Inicio (Initiate)
+- Pantalla de Inicio (Initiate)
 Muestra una imagen con un botón central interactivo que, al presionarlo, reproduce un audio y activa un servomotor conectado a Firebase.
 
-Una ventana emergente que muestra un tutorial de la aplicación y un enlace a un video tutorial en YouTube.
+- Una ventana emergente que muestra un tutorial de la aplicación y un enlace a un video tutorial en YouTube.
 
--Pantalla de Rompecabezas (Puzzle)
+- Pantalla de Rompecabezas (Puzzle)
 Permite al usuario interactuar con imágenes (por ejemplo, nido.png y cueva.png) que, al tocarlas, reproducen audios y activan servos a través de Firebase.
 
-Una pila de imágenes con posiciones específicas (por ejemplo, un tablero y una despedida).
+- Una pila de imágenes con posiciones específicas (por ejemplo, un tablero y una despedida).
 
-Navegación entre pantallas (hacia atrás a las instrucciones o hacia la pantalla de inicio).
+- Navegación entre pantallas (hacia atrás a las instrucciones o hacia la pantalla de inicio).
 
--Reproducción de Audio y Control de Servo
-Al tocar cualquier imagen, se activa la reproducción de un archivo de audio asociado y se controla el servomotor conectado a Firebase.
+- Reproducción de Audio y Control de Servo:
+  1. Al tocar cualquier imagen, se activa la reproducción de un archivo de audio asociado y se controla el servomotor conectado a Firebase.
+  2. Se detiene cualquier audio anterior antes de comenzar a reproducir el nuevo.
 
-Se detiene cualquier audio anterior antes de comenzar a reproducir el nuevo.
-
--Ventana Emergente
-Al hacer clic en el ícono de tutorial, se muestra una ventana emergente con información y un enlace a un video tutorial.
+- Ventana Emergente: Al hacer clic en el ícono de tutorial, se muestra una ventana emergente con información y un enlace a un video tutorial.
 
 ## Contribuciones
 Si deseas contribuir a este proyecto, por favor sigue estos pasos:
@@ -114,9 +109,8 @@ Crea un pull request.
 ## Dependencias
 Para que el proyecto funcione correctamente, necesitas agregar las siguientes dependencias en tu archivo pubspec.yaml. Estas son las librerías necesarias:
 
-1. Dependencias en pubspec.yaml
-Abre el archivo pubspec.yaml y agrega las siguientes líneas en la sección de dependencias:
-*******************************************************************************
+1. **Dependencias en pubspec:** Abre el archivo pubspec.yaml y agrega las siguientes líneas en la sección de dependencias:
+```yaml
 dependencies:
   flutter:
     sdk: flutter
@@ -124,13 +118,13 @@ dependencies:
   firebase_database: ^10.0.4
   audioplayers: ^0.20.0
   url_launcher: ^6.1.5
-********************************************************************************
+```
 Estas dependencias son para las siguientes funcionalidades:
 
-firebase_core: Para inicializar Firebase en el proyecto.
+- firebase_core: Para inicializar Firebase en el proyecto.
 
-firebase_database: Para interactuar con Firebase Realtime Database y controlar el servomotor.
+- firebase_database: Para interactuar con Firebase Realtime Database y controlar el servomotor.
 
-audioplayers: Para reproducir archivos de audio desde la app.
+- audioplayers: Para reproducir archivos de audio desde la app.
 
-url_launcher: Para abrir enlaces en el navegador, como el tutorial en YouTube.
+- url_launcher: Para abrir enlaces en el navegador, como el tutorial en YouTube.
