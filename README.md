@@ -30,7 +30,7 @@ cd solsi-app
 ```
 
 
-3. **Instalar dependencias:** En la terminal, navega a la carpeta raíz del proyecto y ejecuta:
+2. **Instalar dependencias:** En la terminal, navega a la carpeta raíz del proyecto y ejecuta:
 ```
 flutter pub get
 ```
