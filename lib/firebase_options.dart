@@ -41,51 +41,52 @@ class DefaultFirebaseOptions {
   }
 
   static const FirebaseOptions web = FirebaseOptions(
-    apiKey: 'AIzaSyDcqO9D9FCRSI0CBzEW87FbN4GV8zZpxeI',
-    appId: '1:325193637608:web:a1e11cd5261ee9708ef35d',
-    messagingSenderId: '325193637608',
-    projectId: 'servocontrol2-c5a8f',
-    authDomain: 'servocontrol2-c5a8f.firebaseapp.com',
-    databaseURL: 'https://servocontrol2-c5a8f-default-rtdb.firebaseio.com',
-    storageBucket: 'servocontrol2-c5a8f.firebasestorage.app',
+    apiKey: 'AIzaSyDbiKAyB-qugi2JITiKIoSGGTgUyysQRd4',
+    appId: '1:314788925282:web:1d4abb92c35710d175263b',
+    messagingSenderId: '314788925282',
+    projectId: 'solsicontrol',
+    authDomain: 'solsicontrol.firebaseapp.com',
+    databaseURL: 'https://solsicontrol-default-rtdb.firebaseio.com',
+    storageBucket: 'solsicontrol.firebasestorage.app',
   );
 
   static const FirebaseOptions android = FirebaseOptions(
-    apiKey: 'AIzaSyAiiBOMavZuuWIuHfeKL02DY2d5kgQXrts',
-    appId: '1:325193637608:android:08126098e8581a858ef35d',
-    messagingSenderId: '325193637608',
-    projectId: 'servocontrol2-c5a8f',
-    databaseURL: 'https://servocontrol2-c5a8f-default-rtdb.firebaseio.com',
-    storageBucket: 'servocontrol2-c5a8f.firebasestorage.app',
+    apiKey: 'AIzaSyA5SAKjeeYVJUf0BNaRv95VsK1rPjPkUi0',
+    appId: '1:314788925282:android:c18d2553ae55b6a375263b',
+    messagingSenderId: '314788925282',
+    projectId: 'solsicontrol',
+    databaseURL: 'https://solsicontrol-default-rtdb.firebaseio.com',
+    storageBucket: 'solsicontrol.firebasestorage.app',
   );
 
   static const FirebaseOptions ios = FirebaseOptions(
-    apiKey: 'AIzaSyCJG4y9eDhoIofeEZdNGg0zdQ-7FMto2T8',
-    appId: '1:325193637608:ios:fc80730f2e5a20b28ef35d',
-    messagingSenderId: '325193637608',
-    projectId: 'servocontrol2-c5a8f',
-    databaseURL: 'https://servocontrol2-c5a8f-default-rtdb.firebaseio.com',
-    storageBucket: 'servocontrol2-c5a8f.firebasestorage.app',
+    apiKey: 'AIzaSyBdchrq62cHoYSvfrCEJjd1pRojHEXQgh4',
+    appId: '1:314788925282:ios:315d492ad602eaab75263b',
+    messagingSenderId: '314788925282',
+    projectId: 'solsicontrol',
+    databaseURL: 'https://solsicontrol-default-rtdb.firebaseio.com',
+    storageBucket: 'solsicontrol.firebasestorage.app',
     iosBundleId: 'com.example.solsiApp',
   );
 
   static const FirebaseOptions macos = FirebaseOptions(
-    apiKey: 'AIzaSyCJG4y9eDhoIofeEZdNGg0zdQ-7FMto2T8',
-    appId: '1:325193637608:ios:fc80730f2e5a20b28ef35d',
-    messagingSenderId: '325193637608',
-    projectId: 'servocontrol2-c5a8f',
-    databaseURL: 'https://servocontrol2-c5a8f-default-rtdb.firebaseio.com',
-    storageBucket: 'servocontrol2-c5a8f.firebasestorage.app',
+    apiKey: 'AIzaSyBdchrq62cHoYSvfrCEJjd1pRojHEXQgh4',
+    appId: '1:314788925282:ios:315d492ad602eaab75263b',
+    messagingSenderId: '314788925282',
+    projectId: 'solsicontrol',
+    databaseURL: 'https://solsicontrol-default-rtdb.firebaseio.com',
+    storageBucket: 'solsicontrol.firebasestorage.app',
     iosBundleId: 'com.example.solsiApp',
   );
 
   static const FirebaseOptions windows = FirebaseOptions(
-    apiKey: 'AIzaSyDcqO9D9FCRSI0CBzEW87FbN4GV8zZpxeI',
-    appId: '1:325193637608:web:de9c1f1cbe6e17a18ef35d',
-    messagingSenderId: '325193637608',
-    projectId: 'servocontrol2-c5a8f',
-    authDomain: 'servocontrol2-c5a8f.firebaseapp.com',
-    databaseURL: 'https://servocontrol2-c5a8f-default-rtdb.firebaseio.com',
-    storageBucket: 'servocontrol2-c5a8f.firebasestorage.app',
+    apiKey: 'AIzaSyDbiKAyB-qugi2JITiKIoSGGTgUyysQRd4',
+    appId: '1:314788925282:web:0e5d1ce1e771e5d175263b',
+    messagingSenderId: '314788925282',
+    projectId: 'solsicontrol',
+    authDomain: 'solsicontrol.firebaseapp.com',
+    databaseURL: 'https://solsicontrol-default-rtdb.firebaseio.com',
+    storageBucket: 'solsicontrol.firebasestorage.app',
   );
+
 }

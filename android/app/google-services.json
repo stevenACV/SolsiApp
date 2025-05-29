@@ -1,14 +1,14 @@
 {
   "project_info": {
-    "project_number": "325193637608",
-    "firebase_url": "https://servocontrol2-c5a8f-default-rtdb.firebaseio.com",
-    "project_id": "servocontrol2-c5a8f",
-    "storage_bucket": "servocontrol2-c5a8f.firebasestorage.app"
+    "project_number": "314788925282",
+    "firebase_url": "https://solsicontrol-default-rtdb.firebaseio.com",
+    "project_id": "solsicontrol",
+    "storage_bucket": "solsicontrol.firebasestorage.app"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:325193637608:android:08126098e8581a858ef35d",
+        "mobilesdk_app_id": "1:314788925282:android:c18d2553ae55b6a375263b",
         "android_client_info": {
           "package_name": "com.example.solsi_app"
         }
@@ -16,7 +16,7 @@
       "oauth_client": [],
       "api_key": [
         {
-          "current_key": "AIzaSyAiiBOMavZuuWIuHfeKL02DY2d5kgQXrts"
+          "current_key": "AIzaSyA5SAKjeeYVJUf0BNaRv95VsK1rPjPkUi0"
         }
       ],
       "services": {
